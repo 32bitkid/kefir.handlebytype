@@ -14,7 +14,7 @@ npm install kefir.handlebytype
 
 Each of handler is invoked with three arguments: an emitter, the value of the event (_without_ the `type` property), and an event object.
 
-```
+```js
 import Kefir from 'kefir';
 import handle from 'kefir.handle';
 import handleByType from 'kefir.handlebytype';
@@ -39,7 +39,7 @@ source.withHandler(handle({
 A boolean can be passed second argument, which will control if matched value types will be re-emitted or discarded.
 
 
-```
+```js
 source.withHandler(handle({
   value: handleByType({
     FOO(emitter, data, event) { emitter.event(event); },
