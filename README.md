@@ -27,10 +27,10 @@ var source = Kefir.sequentally(100, [
 source.withHandler(handle({
   value: handleByType({
     FOO(emitter, data) {
-      emitter.value({ type: 'BAZ', data: data.foo })
+      emitter.value({ type: 'BAZ', data: data.foo });
     },
     BAR(emitter, data) {
-      emitter.value({ type: 'BAZ', data: data.bar })
+      emitter.value({ type: 'BAZ', data: data.bar });
     }
   }),
 }));
