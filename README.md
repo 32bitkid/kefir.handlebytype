@@ -1,6 +1,6 @@
 # kefir.handlebytype
 
-A tiny helper to facilitate event replication over Kefir.Observable Flux-like event streams. Works best when paired with (`kefir.handle`)[https://github.com/32bitkid/kefir.handle].
+A tiny helper to facilitate event replication over Kefir.Observable Flux-like event streams. Works best when paired with [`kefir.handle`](https://github.com/32bitkid/kefir.handle).
 
 ## Installation
 
