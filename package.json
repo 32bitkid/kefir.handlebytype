@@ -1,6 +1,6 @@
 {
   "name": "kefir.handlebytype",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A tiny helper to facilitate event replication over Kefir Observable Flux-like event streams.",
   "main": "dist/index.js",
   "scripts": {
