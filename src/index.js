@@ -1,5 +1,5 @@
 export default
-  (receivers, passthrough = true) =>
+  (receivers, { only = false } = {}) =>
   (emitter, e1, e2) => {
     const event = (e2 === undefined) ? e1 : e2;
     const { type, ...rest } = (e2 === undefined) ? e1.value : e1;
@@ -9,6 +9,6 @@ export default
       receivers[key](emitter, rest, event);
       return;
     }
-    if (passthrough) { emitter.event(event); }
+    if (!only) { emitter.event(event); }
   };
 

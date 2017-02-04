@@ -36,7 +36,7 @@ source.withHandler(handle({
 }));
 ```
 
-A boolean can be passed second argument, which will control if matched value types will be re-emitted or discarded.
+A second argument, `options`, can be passed to further control the handler. A options value of `{ only: true }` will throw away types that are _not_ matched by any handler.
 
 
 ```js
@@ -44,7 +44,7 @@ source.withHandler(handle({
   value: handleByType({
     FOO(emitter, data, event) { emitter.event(event); },
   }),
-}, false));
+}, { only: true }));
 
 // Only FOO events will be re-emitted.
 ```
